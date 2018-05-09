@@ -32,10 +32,10 @@ class App extends Component {
 	
   render() {
     return (
-      <div class="container">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">
               Patient Records &nbsp;
             </h3>
           </div>

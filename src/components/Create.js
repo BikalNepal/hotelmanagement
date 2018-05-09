@@ -34,33 +34,33 @@ class Create extends Component {
   render() {
     const { name, age, title, symptoms } = this.state;
     return (
-      <div class="container">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">
               ADD PATIENT
             </h3>
           </div>
-          <div class="panel-body">
+          <div className="panel-body">
             <h4><Link to="/">Patient List</Link></h4>
             <form onSubmit={this.onSubmit}>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="name">Patient Name:</label>
-                <input type="text" class="form-control" name="name" value={name} onChange={this.onChange} placeholder="Patient's Name" />
+                <input type="text" className="form-control" name="name" value={name} onChange={this.onChange} placeholder="Patient's Name" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="age">Patient Age:</label>
-                <input type="text" class="form-control" name="age" value={age} onChange={this.onChange} placeholder="Patient's Age" />
+                <input type="text" className="form-control" name="age" value={age} onChange={this.onChange} placeholder="Patient's Age" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="title">Title:</label>
-                <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
+                <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="symptoms">Symptoms:</label>
-                <textArea class="form-control" name="symptoms" onChange={this.onChange} placeholder="Symptoms" cols="80" rows="3">{symptoms}</textArea>
+                <textArea className="form-control" name="symptoms" onChange={this.onChange} placeholder="Symptoms" cols="80" rows="3">{symptoms}</textArea>
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" className="btn btn-default">Submit</button>
             </form>
           </div>
       </div>
